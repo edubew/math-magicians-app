@@ -3,3 +3,43 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background: rgb(215, 215, 224);
+}
+
+.calculator__container {
+  display: grid;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(5rem, auto) repeat(5, 5rem);
+  margin-top: 4rem;
+  justify-content: center;
+}
+
+.calculator__container button {
+  outline: none;
+  cursor: pointer;
+  border: 1px solid rgb(209, 209, 202);
+  font-size: 1rem;
+}
+
+.calculator__container button:hover,
+.calculator__container button:focus {
+  background-color: gray;
+}
+
+.span__two {
+  grid-column: span 2;
+}
+
+.calculator__output {
+  grid-column: 1/-1;
+  background-color: gray;
+  color: #fff;
+  padding: 1rem;
+  font-size: 3rem;
+}
+
+.calculator__operand {
+  background: rgb(250, 120, 34);
+}
