@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => (
   <header>
-    <Link className="app__tittle" to="/">Math Magicians</Link>
+    <Link className="app__title" to="/">Math Magicians</Link>
 
     <nav>
-      <Link to="/">Home</Link>
-      <Link to="/calculator">Calculator</Link>
-      <Link to="/quote">Quote</Link>
+      <Link className="nav__item" to="/">Home</Link>
+      <Link className="nav__item" to="/calculator">Calculator</Link>
+      <Link className="nav__item" to="/quote">Quote</Link>
     </nav>
   </header>
 );

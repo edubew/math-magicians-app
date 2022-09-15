@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import {
-  BrowserRouter as Router, Routes, Route,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Calculator from './Components/Calculator';
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
