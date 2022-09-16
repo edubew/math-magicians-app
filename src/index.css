@@ -6,11 +6,12 @@
 
 body {
   background: #e0cdd0;
+  overflow-x: hidden;
 }
 
 .container {
   display: flex;
-  gap: 8rem;
+  gap: 6rem;
   margin-top: 6rem;
   margin-left: 2rem;
 }
@@ -31,7 +32,7 @@ body {
 
 .calculator__container button:hover,
 .calculator__container button:focus {
-  background-color: #034c65;
+  background-color: tan;
 }
 
 .span__two {
@@ -60,7 +61,7 @@ header {
 }
 
 .app__title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: none;
   color: #fff;
   font-weight: 600;
@@ -103,4 +104,39 @@ p {
   font-size: 1.4rem;
   line-height: 1.8rem;
   text-align: center;
+}
+
+/* Media queries(small devices) */
+@media screen and (max-width: 743px) {
+  .container {
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 2.5rem;
+    margin-left: 1rem;
+  }
+
+  .calculator__container {
+    display: grid;
+    grid-template-columns: repeat(4, 4rem);
+    grid-template-rows: minmax(4rem, auto) repeat(5, 4rem);
+  }
+
+  .app__title {
+    font-size: 1rem;
+  }
+
+  nav {
+    display: flex;
+    gap: 1.4rem;
+    margin-right: 1.5rem;
+  }
+
+  .nav__item {
+    font-size: 0.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 1rem;
+  }
 }
