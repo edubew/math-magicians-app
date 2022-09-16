@@ -13,7 +13,7 @@
 - React
 
 ## Live Demo
-[Math-Magicians Demo]()
+[Math-Magicians Demo](https://develop--delicate-salmiakki-fe3029.netlify.app/)
 
 ## Project Setup
 To get a local copy up and running follow these simple example steps.
